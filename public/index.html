@@ -13,8 +13,8 @@
 </head>
 <body>
     <header>
-        <div class="container">            
-            <nav class="col-md-8 offset-md-2 navbar navbar-expand-lg sticky-top mb-5 bg-white">
+        <div class="container ">            
+            <nav id="spice-ucm-navbar" class="col-md-8 offset-md-2 navbar navbar-expand-lg fixed-top bg-white">
                 <a class="navbar-brand" href="https://spice-h2020.eu/">
                     <img class="img-fluid" src="./images/spice-logo.png" alt="SPICE logo" width="150px">
                 </a>
@@ -24,9 +24,9 @@
                 <div class="collapse navbar-collapse d-flex flex-row justify-content-center" id="navbarNav">
                     <div class="navbar-nav spice-navbar">
                         <a class="nav-link active" href="#">About SPICE</a>
-                        <a class="nav-link active" href="#">Community Model</a>
-                        <a class="nav-link active" href="#">VISIR</a>
-                        <a class="nav-link active" href="#">Contact</a>
+                        <a class="nav-link active" href="#community-model">Community Model</a>
+                        <a class="nav-link active" href="#visir">VISIR</a>
+                        <a class="nav-link active" href="#people">People</a>
                     </div>
                 </div>
             </nav>
@@ -34,13 +34,81 @@
         <!-- Header End -->
     </header>
 
-    <div class="container fluid">
-        <div class="row">
-                <h1>SPICE UCM</h1>
-                <p>The SPICE Community Model API forms part of the Linked Data infrastructure used within the wider <a href="https://spice-h2020.eu/">SPICE project</a>, an EU-H2020 funded project dedicated to citizen curation and cultural heritage.</p>
-                <p>The research leading to these software has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement SPICE No 870811</p>
-        </div>
-    </div>
+    <main class="container" data-spy="scroll" data-target="#spice-ucm-navbar" data-offset="0">
+        <section id="home" class="row">
+            <h1>About SPICE</h1>
+            <p>The SPICE Community Model API forms part of the Linked Data infrastructure used within the wider <a href="https://spice-h2020.eu/">SPICE project</a>, an EU-H2020 funded project dedicated to citizen curation and cultural heritage.</p>
+            <figure class="figure">
+                <img class="figure-img img-fluid rounded" src="./images/spice-ecosystem.png" alt="SPICE software ecosystem" width="600px">
+                <figcaption class="figure-caption text-right mt-2">SPICE software ecosystem</figcaption>
+            </figure>
+            
+            <p>The research leading to these software has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement SPICE No 870811</p>
+        </section>
+        <section  class="row" id="community-model">
+            <h1>Community-model</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p>
+            <div class="row card-deck">
+                <div class="card col">
+                    <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/design1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Design Museum Helsinki</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/mncn02.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">National Museum of Natural Sciences</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/hetch1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Hecht Museum</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/gam01.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Gallery of Modern Art</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p>
+        </section>
+        <section class="row" id="visir">
+            <h1>VISIR</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis dolorum fuga nisi officiis, quasi assumenda ducimus velit, saepe totam sapiente natus labore soluta ipsam architecto voluptatibus dolorem excepturi delectus!</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
+                accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
+                    accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
+                        accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
+                            accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
+                                accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
+                                    accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p>
+        </section>
+        <section id="people" class="row">
+            <h1>People</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo distinctio ad quod, sit aliquam quis temporibus quia in? Omnis enim quam cum veniam natus excepturi itaque aut sunt praesentium cupiditate.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
+                accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
+                    accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
+                        accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
+                            accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p>
+        </section>
+
+    </main>
         
     </body>
     </html>
