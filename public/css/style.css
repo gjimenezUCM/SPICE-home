@@ -1,0 +1,36 @@
+:root {
+    --bg-color: rgba(163, 163, 54,0.9);
+    --font-color: black;
+    --link-font-color: var(--font-color);
+    --link-hover-font-color: var(--bg-color);
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+header {
+    -webkit-box-shadow: 0 10px 15px rgba(25,25,25,0.1);
+}
+.spice {
+    width: 100%;
+    background-color: var(--bg-color);
+    padding: 3.5em;
+}
+
+.spice-navbar {
+    font-size: 16px;
+}
+
+.spice-navbar a {
+    color: var(--link-font-color);
+    text-decoration: none;
+}
+
+.spice-navbar a:hover {
+    color: var(--link-hover-font-color);
+}
+
+.spice h1 {
+    color: --font-color;
+}
