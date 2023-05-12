@@ -23,10 +23,10 @@
                 </button>
                 <div class="collapse navbar-collapse d-flex flex-row justify-content-center" id="navbarNav">
                     <div class="navbar-nav spice-navbar">
-                        <a class="nav-link active" href="#">About SPICE</a>
-                        <a class="nav-link active" href="#community-model">Community Model</a>
-                        <a class="nav-link active" href="#visir">VISIR</a>
-                        <a class="nav-link active" href="#people">People</a>
+                        <a class="nav-link" href="#home">About SPICE</a>
+                        <a class="nav-link" href="#community-model">Community Model</a>
+                        <a class="nav-link" href="#visir">VISIR</a>
+                        <a class="nav-link" href="#people">People</a>
                     </div>
                 </div>
             </nav>
@@ -34,22 +34,38 @@
         <!-- Header End -->
     </header>
 
-    <main class="container" data-spy="scroll" data-target="#spice-ucm-navbar" data-offset="0">
+    <main class="container" data-spy="scroll" data-target="#spice-ucm-navbar" data-offset="200">
         <section id="home" class="row">
             <h1>About SPICE</h1>
+            <p> <a href="https://spice-h2020.eu/">SPICE</a> (Social cohesion, Participation, and Inclusion through Cultural Engagement) is an EU Horizon 2020 funded project
+            dedicated to citizen curation of cultural heritage. We are developing technologies that help communities select paintings, artefacts and other museum objects
+        and share interpretations with others. Through this, citizens can learn more about themselves and develop a better understanding of, anf empathu for, other communities.
+    We call this <span class="font-weight-bolder">citizen curation</span>.</p>
             <p>The SPICE Community Model API forms part of the Linked Data infrastructure used within the wider <a href="https://spice-h2020.eu/">SPICE project</a>, an EU-H2020 funded project dedicated to citizen curation and cultural heritage.</p>
             <figure class="figure">
                 <img class="figure-img img-fluid rounded" src="./images/spice-ecosystem.png" alt="SPICE software ecosystem" width="600px">
                 <figcaption class="figure-caption text-right mt-2">SPICE software ecosystem</figcaption>
             </figure>
             
-            <p>The research leading to these software has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement SPICE No 870811</p>
+            
         </section>
         <section  class="row" id="community-model">
-            <h1>Community-model</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p>
+            <h1>Community model</h1>
+            <p>SPICE community model provides the technological infrastructure that enables reasoning about citizens from their
+            characteristics, opinions, and preferences. Each community identifies a group of citizens that are related according to
+            certain similarity criteria.</p>
+            <p>Citizens belong to certain <emph>explicit communities</emph>, also called interest or target groups (the static a priori categories),
+            according to their demographic attributes. Besides, citizens may be inferred to belong to the so-called <emph>implicit communities</emph>
+            (the emerging communities) created by using Citizen Contribution Attributes that relate users with artefacts
+            through different types of interactions: stories, opinions, selections, and others.</p>
+            <p>Implicit communities are computed by community detection algorithms that rely on similarity
+            functions that use Artefact Attributes and Citizen Contribution Attributes. Different communities may be formed using different
+            configurations, also called perspectives. The so-called Interpretation Reflection Loop, or IRL, process defined in the SPICE project is based on the fact 
+            that the same citizen can be classified in different communities using different perspectives.</p>
+            <p>The community model uses a selection of the best-performing clustering algorithms and similarity functions to create implicit communities
+            based on perspectives. It stores lists of implicit and explicit communities and enables visualization and explanation processes over the discovered communities.</p>
             <div class="row card-deck">
-                <div class="card col">
+                <div class="card">
                     <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/design1.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Design Museum Helsinki</h5>
@@ -58,7 +74,7 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-                <div class="card col">
+                <div class="card">
                     <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/mncn02.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">National Museum of Natural Sciences</h5>
@@ -67,7 +83,7 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-                <div class="card col">
+                <div class="card">
                     <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/hetch1.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Hecht Museum</h5>
@@ -76,7 +92,7 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-                <div class="card col">
+                <div class="card">
                     <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/gam01.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gallery of Modern Art</h5>
@@ -98,17 +114,29 @@
                                 accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
                                     accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p>
         </section>
-        <section id="people" class="row">
+        <section id="people">
             <h1>People</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo distinctio ad quod, sit aliquam quis temporibus quia in? Omnis enim quam cum veniam natus excepturi itaque aut sunt praesentium cupiditate.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
-                accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
-                    accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
-                        accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
-                            accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p>
+            <ul>
+                <li><a href="https://gaia.fdi.ucm.es/people/belen/" target="_blank">Belén Díaz Agudo</a>. Professor (UCM)</li>
+                <li><a href="https://gaia.fdi.ucm.es/people/guille/" target="_blank">Guillermo Jiménez Díaz</a>. Associate Professor (UCM)</li>
+                <li>José Ángel Sánchez Martín. Postdoc researcher.</li>
+                <li>Marco Expósito Pérez. Postgraduate fellow.</li>
+                <li>Ilya Lapshin. Undergraduate fellow.</li>
+            </ul>
         </section>
 
     </main>
+    <footer class="container mt-5">
+        <div class="row">
+            <div class="col-md-1">
+                <img src="./images/eu_footer.png" alt="EU flag" height="50px">
+            </div>
+            <div class="col-md-8 font-italic text-secondary">
+            <p>The research leading to these software has received funding from the European Union's Horizon 2020 research and
+                innovation programme under grant agreement SPICE No 870811</p>
+            </div>           
+        </div>
+    </footer>
         
     </body>
     </html>
