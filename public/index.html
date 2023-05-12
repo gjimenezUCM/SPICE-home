@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;0,800;1,400&display=swap"  rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>SPICE UCM</title>
 </head>
 <body>
-    <header>
-        <div class="container ">            
-            <nav id="spice-ucm-navbar" class="col-md-8 offset-md-2 navbar navbar-expand-lg fixed-top bg-white">
+    <header class="container">
+            <nav id="spice-ucm-navbar" class="navbar navbar-expand-lg bg-white">
                 <a class="navbar-brand" href="https://spice-h2020.eu/">
                     <img class="img-fluid" src="./images/spice-logo.png" alt="SPICE logo" width="150px">
                 </a>
@@ -30,89 +29,145 @@
                     </div>
                 </div>
             </nav>
-        </div>       
         <!-- Header End -->
     </header>
 
     <main class="container" data-spy="scroll" data-target="#spice-ucm-navbar" data-offset="200">
-        <section id="home" class="row">
+        <section id="home">
             <h1>About SPICE</h1>
-            <p> <a href="https://spice-h2020.eu/">SPICE</a> (Social cohesion, Participation, and Inclusion through Cultural Engagement) is an EU Horizon 2020 funded project
-            dedicated to citizen curation of cultural heritage. We are developing technologies that help communities select paintings, artefacts and other museum objects
-        and share interpretations with others. Through this, citizens can learn more about themselves and develop a better understanding of, anf empathu for, other communities.
-    We call this <span class="font-weight-bolder">citizen curation</span>.</p>
-            <p>The SPICE Community Model API forms part of the Linked Data infrastructure used within the wider <a href="https://spice-h2020.eu/">SPICE project</a>, an EU-H2020 funded project dedicated to citizen curation and cultural heritage.</p>
-            <figure class="figure">
-                <img class="figure-img img-fluid rounded" src="./images/spice-ecosystem.png" alt="SPICE software ecosystem" width="600px">
-                <figcaption class="figure-caption text-right mt-2">SPICE software ecosystem</figcaption>
-            </figure>
-            
-            
-        </section>
-        <section  class="row" id="community-model">
-            <h1>Community model</h1>
-            <p>SPICE community model provides the technological infrastructure that enables reasoning about citizens from their
-            characteristics, opinions, and preferences. Each community identifies a group of citizens that are related according to
-            certain similarity criteria.</p>
-            <p>Citizens belong to certain <emph>explicit communities</emph>, also called interest or target groups (the static a priori categories),
-            according to their demographic attributes. Besides, citizens may be inferred to belong to the so-called <emph>implicit communities</emph>
-            (the emerging communities) created by using Citizen Contribution Attributes that relate users with artefacts
-            through different types of interactions: stories, opinions, selections, and others.</p>
-            <p>Implicit communities are computed by community detection algorithms that rely on similarity
-            functions that use Artefact Attributes and Citizen Contribution Attributes. Different communities may be formed using different
-            configurations, also called perspectives. The so-called Interpretation Reflection Loop, or IRL, process defined in the SPICE project is based on the fact 
-            that the same citizen can be classified in different communities using different perspectives.</p>
-            <p>The community model uses a selection of the best-performing clustering algorithms and similarity functions to create implicit communities
-            based on perspectives. It stores lists of implicit and explicit communities and enables visualization and explanation processes over the discovered communities.</p>
-            <div class="row card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/design1.jpg" alt="Card image cap">
+
+ 
+            <div class="col-md-8">
+                <p><a href="https://spice-h2020.eu/">SPICE</a> (Social cohesion, Participation, and Inclusion through Cultural Engagement) is an EU Horizon 2020 funded project
+                dedicated to citizen curation of cultural heritage. We are developing technologies that help communities select paintings, artefacts and other museum objects
+                and share interpretations with others. Through this, citizens can learn more about themselves and develop a better understanding of, and empathy for, other communities.
+                SPICE project defines an ecosystem of software services to support citizen curation. University Complutense of Madrid (UCM) group is in charge of two subsystems:</p>
+            </div>
+
+            <div class="card-deck">
+                <div class="card abstract text-center">
                     <div class="card-body">
-                        <h5 class="card-title">Design Museum Helsinki</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h3 class="card-title">Community Model</h3>
+                        <p class="card-text">Technological infrastructure to discover citizen communities based on
+                        similar characteristics and opinions when interacting with museum artefacts</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/mncn02.jpg" alt="Card image cap">
+
+                <div class="card abstract text-center">
                     <div class="card-body">
-                        <h5 class="card-title">National Museum of Natural Sciences</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/hetch1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Hecht Museum</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://spice-h2020.eu/assets/img/gallery/gam01.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Gallery of Modern Art</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h3 class="card-title">VISIR</h3>
+                        <p class="card-text">Visualization tool to assist curators to configure, visualize
+                        and compare different communities discoved by the community model</p>
                     </div>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p>
+
+            <article class="d-flex justify-content-center mt-4">
+                <figure class="figure">
+                    <img class="figure-img img-fluid rounded" src="./images/spice-ecosystem.png" alt="SPICE software ecosystem"
+                        width="800px">
+                    <figcaption class="figure-caption text-right mt-2">SPICE software ecosystem</figcaption>
+                </figure>
+            </article>
+
+            
+            
         </section>
-        <section class="row" id="visir">
+        <section id="community-model">
+            <h1>Community model</h1>
+
+            <div class="col-md-8">
+                <p>
+                    SPICE Community model is a Software as a Service that uses a selection of clustering algorithms that rely on similarity
+                        functions that use <span class="font-weight-bold">artefact attributes</span> and <span
+                            class="font-weight-bold">citizen contributions</span> to discover new citizen communities and enables
+                        visualization and explanation processes over explicit and implicit
+                        communities.</span>
+                </p>
+            </div>
+            <div class="card-deck">
+                <div class="card abstract text-center">
+                    <div class="card-body">
+                        <h3 class="card-title">Explicit communities</h3>
+                        <p class="card-text">Citizens belong to certain <span class="font-weight-bold">target groups</span> (the static a priori categories) explicitly or
+                        according to their <span class="font-weight-bold">demographic attributes</span></p>
+                    </div>
+                </div>
+            
+                <div class="card abstract text-center">
+                    <div class="card-body">
+                        <h3 class="card-title">Implicit communities</h3>
+                        <p class="card-text">Inferred communities based on finding similar <span class="font-weight-bold">citizen contributions</span> and/or with artworks with  similar <span class="font-weight-bold">artefact attributes</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <article class="d-flex justify-content-center mt-4">
+                <figure class="figure">
+                    <img class="figure-img img-fluid rounded" src="./images/community-model.png" alt="Data spaces in SPICE"
+                        width="800px">
+                    <figcaption class="figure-caption text-right mt-2">Data spaces in SPICE</figcaption>
+                </figure>
+            </article>
+
+                <div class="card abstract text-center">
+                    <div class="card-body">
+                        <h3 class="card-title">Get started with the Community model</h3>
+                        <p class="card-text">Check out the Community Model API and test it using SPICE case studies</p>
+                        <div class="row">
+                            <div class="col"><a class="btn btn-primary" href="https;//spice.fdi.ucm.es/dmh/" target="_blank">Design Museum Helsinki </a></div>
+                            <div class="col"><a class="btn btn-primary" href="https;//spice.fdi.ucm.es/hecht/" target="_blank">Hecht Museum</a></div>
+                            <div class="col"><a class="btn btn-primary" href="https;//spice.fdi.ucm.es/gam/" target="_blank">Gallery of Modern Art</a></div>
+                            <div class="col"><a class="btn btn-primary" href="https;//spice.fdi.ucm.es/mncn/" target="_blank">National Museum of Natural Sciences</a></div>
+                        </div>
+                        <p><a href="https://github.com/spice-h2020/spice-community-model" target="_blank"><img class="img-fluid circle" src="./images/github-mark.png" alt="Community Model on Github" width="100px"></a></p>
+                    </div>
+                </div>
+
+
+            
+            
+        </section>
+        <section id="visir">
             <h1>VISIR</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis dolorum fuga nisi officiis, quasi assumenda ducimus velit, saepe totam sapiente natus labore soluta ipsam architecto voluptatibus dolorem excepturi delectus!</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
-                accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
-                    accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
-                        accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
-                            accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
-                                accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatibus expedita explicabo id nulla quos vitae
-                                    accusamus quam modi temporibus aliquid incidunt iure ab cumque, reiciendis nam, labore, enim magni.</p>
+            <div class="col-md-8">
+                VISIR</span> (VISualization for Interpretation and Reflection) is a visualization tool
+                to assist museum curators in the analysis of communities, allowing reflection processes, and facing different points of view that can arise from 
+                citizen contributions, highlighting their similarities, differences, and relations.
+            </div>
+            <article class="d-flex justify-content-center mt-4">
+                <figure class="figure">
+                    <img class="figure-img img-fluid rounded" src="./images/visir-gui.png" alt="VISIR interface" width="800px">
+                    <figcaption class="figure-caption text-right mt-2">VISIR interface screenshot</figcaption>
+                </figure>
+            </article>
+            <!-- <p>Reflection processes are based on the fact that the same citizen can be classified in different implicit communities
+            using different perspectives. <span class="font-weight-bold">VISIR</span> (VISualization for Interpretation and Reflection) is a tool
+            to assist museum curators in the analysis of these communities and perspectives. VISIR allows museum curators to configure, visualize 
+            and compare different perspectives at the same time, allowing reflection processes, and different viewpoints that can arise from analysis 
+            of the opinions expressed through the contributions, highlighting their similarities, differences, and relations. VISIR is also employed to
+            create new perspectives and, hence, to evaluate how the Community Model is working.</p> -->
+
+            <div class="card abstract text-center">
+                <div class="card-body">
+                    <h3 class="card-title">Get started with the Community VISIR</h3>
+                    <p class="card-text">Check out VISIR using SPICE case studies</p>
+                    <div class="row">
+                        <div class="col"><a class="btn btn-primary" href="https://spice.fdi.ucm.es/visir/?perspective1=D3.7-DMH-S-interest.emotions-S-artworks%20%20%28Materials%29" target="_blank">Design
+                                Museum Helsinki </a></div>
+                        <div class="col"><a class="btn btn-primary" href="https://spice.fdi.ucm.es/visir/?perspective1=D3.7-HECHT-S-sentiment.Joseph_Flavius-S-artworks%20%20%28Beliefs.beliefJ%29" target="_blank">Hecht
+                                Museum</a></div>
+                        <div class="col"><a class="btn btn-primary" href="https://spice.fdi.ucm.es/visir/?perspective1=D3.7-GAM-S-interest.itMakesMeThinkAbout.emotions-S-artworks%20%20%28iconclassArrayIDs%29" target="_blank">Gallery of
+                                Modern Art</a></div>
+                        <div class="col"><a class="btn btn-primary" href="https://spice.fdi.ucm.es/visir/?perspective1=D3.7-MNCN-S-demographics.school-S-artworks%20%20%28demographics.food%29" target="_blank">National
+                                Museum of Natural Sciences</a></div>
+                    </div>
+                    <p><a href="https://github.com/spice-h2020/VISIR" target="_blank"><img class="img-fluid circle"
+                                src="./images/github-mark.png" alt="VISIR on Github" width="100px"></a></p>
+                </div>
+            </div>
+
+
         </section>
         <section id="people">
             <h1>People</h1>

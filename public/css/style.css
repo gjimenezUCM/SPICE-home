@@ -7,15 +7,23 @@
 
 body {
     font-family: 'Karla', sans-serif;
-    position: relative;
+    font-size: 20px;
 }
 
-header {
-    -webkit-box-shadow: 0 10px 15px rgba(25,25,25,0.1);
+
+h1 {
+    color: --font-color;
+    margin-top: 2rem;
+    font-weight: 700;
 }
 
-main {
-    margin-top: 100px;
+h3 {
+    color: --font-color;
+    font-weight: 700;
+}
+
+.abstract {
+    border: none;
 }
 
 .card-img-top {
@@ -24,14 +32,9 @@ main {
     object-fit: cover;
 }
 
-.spice {
-    width: 100%;
+.btn-primary {
     background-color: var(--bg-color);
-    padding: 3.5em;
-}
-
-.spice-navbar {
-    font-size: 16px;
+    border-color: var(--bg-color);
 }
 
 .spice-navbar a {
@@ -43,11 +46,5 @@ main {
     color: var(--link-hover-font-color);
 }
 
-.spice h1 {
-    color: --font-color;
-}
 
-.inline-block {
-    display: inline-block;
-}
 
